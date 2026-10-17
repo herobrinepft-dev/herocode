@@ -288,14 +288,3 @@ Services tiers utilisés selon ta config : DuckDuckGo, Open-Meteo, Ollama, APIs 
 
 **Herobrinepft**  
 Portfolio : [herobrinepft.netlify.app](https://herobrinepft.netlify.app/)
-
----
-
-*HeroCode — code localement, reste aux commandes.*
-'''
-Path = __import__("pathlib").Path
-Path("/home/workdir/artifacts/README.md").write_text(
-    Path("/home/workdir/artifacts/README.md").read_text(encoding="utf-8") if False else open("/home/workdir/artifacts/README.md", encoding="utf-8").read() if False else "",
-    encoding="utf-8",
-)
-print("skip")
